@@ -133,9 +133,9 @@ sock.on('message', function(img, reply){
 var axon = require('axon')
   , sock = axon.socket('req');
 
-req.bind(3000);
+sock.bind(3000);
 
-req.send('resize', img, function(res){
+sock.send('resize', img, function(res){
   
 });
 ```
